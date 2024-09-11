@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    background-image: url('sparkle.gif'), url('bg.png'); 
+    background-repeat: repeat, no-repeat; 
+    background-size: auto, cover; 
+    background-attachment: fixed; 
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#preview-image img {
+    max-width: 50%;
+    height: auto;
+    border: 4px solid #86697b;
+    border-radius: 4px;
+}
+
+#pin-calculator {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pin-display {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #795886; 
+    border-radius: 4px;
+    background-color: #ffe1ff;
+    font-family: monospace; 
+    white-space: nowrap;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: #f3c2fa;
+    color: darkpurple;
+    border: 2px solid #775886;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(248, 230, 250);
+}
+
+button:active {
+    background-color: rgb(211, 211, 211);
+}
+
+#message {
+    color: darkpurple;
+    margin-top: 10px;
+}
+
+#image-container {
+    margin-top: 20px;
+}
+
+#success-message {
+    font-size: 18px;
+    color: darkpurple;
+    margin-top: 10px;
+}
+
+#next-button {
+    background-color: rgb(128, 0, 122);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#next-button:hover {
+    background-color: rgb(211, 0, 165);
+}
+
+#gallery-section {
+    margin-top: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.portrait {
+    width: 45%; /* Adjust width to fit two images side by side */
+    height: auto;
+    border: 2px solid #775886;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .portrait {
+        width: 100%; /* Stack images on smaller screens */
+    }
+}
+.box-image {
+    width: 35%; 
+    aspect-ratio: 1 / 1; 
+    display: inline-block;
+    margin: 5px;
+    vertical-align: top;
+    object-fit: cover; 
+}
+
+.inspa-me {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgb(0, 0, 0);
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto; 
+    width: 80%; 
+}
+
+.inspa-text {
+    width: 35%; 
+    padding-left: 20px; 
+    font-size: 16px; 
+    text-align: justify; 
+}
+
+.inspa-image {
+    width: 100%; 
+    padding-right: 20px; 
+}
+
+.inspa-image img {
+    width: 100%; 
+    height: auto;
+}
+
+h2 {
+    font-size: 28px; 
+    color: #000000;
+    margin-bottom: 20px; 
+}
+
+p {
+    margin-bottom: 15px; 
+    line-height: 1.6; 
+}
+.slide-containers {
+    position: relative;
+    height: 500px; 
+    width: 100%; 
+    overflow: hidden; 
+}
+
+.slide-container {
+    position: relative;
+    height: 500px; 
+    width: 100%; 
+    overflow: hidden;
+}
+
+.fadingSlide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+}
+
+/* Add media queries to adjust styles on smaller screens */
+@media (max-width: 768px) {
+    .inspa-text {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding-left: 10px; /* Reduce padding */
+        width: 100%; /* Ensure text takes full width */
+        text-align: center; /* Center the text on smaller screens */
+    }
+
+    .inspa-image {
+        width: 100%; /* Adjust the image container to full width */
+        padding-right: 0; /* Remove right padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .inspa-text {
+        font-size: 12px; /* Further reduce font size for very small screens */
+
+    }
+}
+
+#next-message-button {
+    background-color: rgb(128, 0, 122);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px; /* Added margin-top */
+    margin-bottom: 20px; /* Added margin-bottom to add space below */
+}
+
+#next-message-button:hover {
+    background-color: rgb(211, 0, 165);
+}
+
+.image-container2 {
+    position: relative;
+    display: block;
+    width: 70%; 
+    margin: 0 auto; 
+}
+
+.sthead {
+    width: 100%;
+    display: block; 
+    position: relative; 
+    z-index: 1; 
+}

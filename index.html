@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zxyvan’s keepsake to their secret.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Preview Image and PIN Entry Section -->
+        <div id="preview-image">
+            <img src="PreviewImg.jpg" alt="Preview Image" />
+        </div>
+        <div id="pin-calculator">
+            <p>You’ll hold the key to our secret.</p>
+            <div id="pin-display">----</div>
+            <div id="buttons">
+                <button onclick="appendDigit('1')">1</button>
+                <button onclick="appendDigit('2')">2</button>
+                <button onclick="appendDigit('3')">3</button>
+                <button onclick="appendDigit('4')">4</button>
+                <button onclick="appendDigit('5')">5</button>
+                <button onclick="appendDigit('6')">6</button>
+                <button onclick="appendDigit('7')">7</button>
+                <button onclick="appendDigit('8')">8</button>
+                <button onclick="appendDigit('9')">9</button>
+                <button onclick="appendDigit('0')">0</button>
+                <button onclick="clearPin()">C</button>
+                <button onclick="submitPin()">Enter</button>
+            </div>
+            <p id="message"></p>
+        </div>
+
+        <!-- 2 portrait and Message Section -->
+        <div id="image-container" style="display: none;">
+            <p id="success-message">PIN correct! You remember our monthsarry! hehe here are our first pictures together to remind us of those magical moments.</p>
+            <div class="image-gallery">
+                <img src="us1.jpg" alt="Portrait 1" class="portrait">
+                <img src="us2.jpg" alt="Portrait 2" class="portrait">
+                <img src="us3.jpg" alt="Portrait 2" class="portrait">
+            </div>
+            <button id="next-button" onclick="goToGallery()">Next</button>
+        </div>
+
+        <!-- Gallery Section -->
+        <div id="gallery-section" style="display: none;">
+            <h2>Moments to cherish</h2>
+            <!-- Add your gallery content here -->
+            <p>Welcome to our memories, love! Here, you can relive the moments we shared before you went to the UK.</p>
+            <img src="d1.jpg" alt="GKC PHOTOGRAPHY" class="box-image" />
+            <img src="d2.jpg" alt="GKC PHOTOGRAPHY" class="box-image" />
+            <img src="d3.jpg" alt="GKC PHOTOGRAPHY" class="box-image" />
+            <img src="d4.jpg" alt="GKC PHOTOGRAPHY" class="box-image" />
+            <img src="d5.jpg" alt="GKC PHOTOGRAPHY" class="box-image" />
+            <img src="d6.jpg" alt="GKC PHOTOGRAPHY" class="box-image" />
+            <!-- 2landscape -->
+            <div class="image-container2">
+                <img src="l1.jpg" alt="gkc pic" class="sthead" />
+                <img src="l3.jpg" alt="gkc pic" class="sthead" />
+                <img src="l2.jpg" alt="gkc pic" class="sthead" />
+            </div>
+            
+            <section>
+                <section class="inspa-me">
+                    <div class="inspa-image">
+        
+                        <div class="slide-containers">
+                            <img src="b1.jpg" alt="KGC PHOTOGRAPHY" class="fadingSlide">
+                            <img src="b2.jpg" alt="GKC PHOTOGRAPHY" class="fadingSlide">
+                            <img src="b3.jpg" alt="GKC PHOTOGRAPHY" class="fadingSlide">
+                        </div>
+                        <p>Every picture in this gallery holds a piece of our love story. Each moment captured is a reminder of how deeply I cherish our time together.</p>
+                    </div>
+                </section>              
+            </section>
+            
+            <button id="next-message-button" onclick="goToSweetMessage()">Next</button>
+        </div>
+        
+        <div id="sweet-message-section" style="display: none;">
+            <h2>My love for you</h2>
+            <p>Here is my message I wanted to share it to you...</p>
+            <p>Hello love,</p>
+            <p>I know it's hard for us to be so far apart, but I believe we can overcome any challenges that come our way during your stay in the UK. I promise I will be strong here, and I need you to be brave there, okay? Always remember that I’m on the same planet, breathing the same air as you. Whenever you miss me, just look up at the sky and know that I’ve seen the same sky you’re looking at right now.</p>
+            <p>I apologize for my actions that may have caused you worry. I did those things because I needed attention and your presence, but I understand that I should control my emotions better. I’m not sure if I can always manage my feelings at midnight, but please remember that I truly love you. My heart beats only for you, Avan Christian.</p>
+            <p>When I don’t text you back or update you, it doesn’t mean I don’t care or don’t love you. I want us to enjoy our time apart, and when your events are finished, I can’t wait to bond with you and play games together. I want to remind you that I’m doing fine, enjoying myself, and trying new things. I look forward to turning “I miss you” into “I’m home,” and I’ll be waiting with open arms.</p>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
